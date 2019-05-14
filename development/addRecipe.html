@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<header class="a-background-grey a-container">
+    <div class="a-header a-container">
+        <h1 class="a-header__logo">
+            <span id="first">Zaplanuj</span>
+            <span id="second">Jedzonko</span>
+        </h1>
+        <h2 class="a-header__user a-container">Imię</h2>
+        <span class="a-orangeUser">
+            <i class="fas fa-user-circle fa-3x"></i>
+          </span>
+    </div>
+</header>
+
+<section>
+    <div class="a-main a-container">
+        <ul class="a-main__sidepanel">
+            <li class="a-main__sidepanel__sidenav">
+                <a href="app.html">Pulpit<span class="a-arrow">></span></a>
+            </li>
+            <li class="a-main__sidepanel__sidenav">
+                <a href="recipes.html">Przepisy<span class="a-arrow">></span></a>
+            </li>
+            <li class="a-main__sidepanel__sidenav">
+                <a href="schedules.html">Plany<span class="a-arrow">></span></a>
+            </li>
+        </ul>
+        <div class="a-main__mainpanel">
+            <div class="a-main__mainpanel__mainbox">
+                <div class="a-title">
+                    <h2 class="a-newRecipe">NOWY PRZEPIS</h2>
+                    <button class="a-saveBTN" type="submit" value="Zapisz i zamknij">Zapisz i zamknij</button>
+                </div>
+                <div class="a-main__mainpanel__mainbox__a-nameRecipe">
+                    <form class="a-nameRecipebox wrapper">
+                        <label>Nazwa przepisu</label>
+                        <input class="a-recipeName" type="text" name="RecipeName" placeholder="Wprowadź tytuł swojego nowego przepisu!">
+                        <label>Opis przepisu</label>
+                        <textarea class="a-recipeDescription" type="text" name="RecipeDescription" placeholder="Opisz swoją potrawę!"></textarea>
+                    </form>
+                </div>
+                <div class="a-recipe">
+                    <div class="a-instructions">
+                        <h2 class="a-greyunderline">INSTRUKCJE</h2>
+                            <textarea class="a-recipeInstruction" type="text" name="RecipeInstruction" placeholder="Wprowadź swój przepis!"></textarea>
+                        <button class="a-btnPlus"><i class="fas fa-plus"></i></button>
+                        <ol id="instruction">
+                        </ol>
+                    </div>
+                    <div class="a-ingredients">
+                        <h2 class="a-greyunderline">SKŁADNIKI</h2>
+                        <textarea class="a-recipeIngredients" type="text" name="RecipeIngredients" placeholder="Podaj składniki!"></textarea>
+                        <button class="a-btnPlus btnIng"><i class="fas fa-plus"></i></button>
+                        <ul id="ingredients">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="./js/addRecipe.js"></script>
+
+</body>
+</html>

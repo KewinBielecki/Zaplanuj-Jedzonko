@@ -1,0 +1,29 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.l-background-grey {
+  background-color: $dark-background;
+}
+
+.l-background-medium {
+  background-color: $medium-background;
+}
+
+.l-background-light {
+  background-color: $light-background;
+}
+
+.l-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 5px 50px;
+}

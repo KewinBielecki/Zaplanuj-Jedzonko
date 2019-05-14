@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="a-background-grey a-container">
+      <div class="a-header a-container">
+      <h1 class="a-header__logo">
+        <span id="first">Zaplanuj</span>
+        <span id="second">Jedzonko</span>
+      </h1>
+        <h2 class="a-header__user a-container">Imię</h2>
+          <span class="a-orangeUser">
+            <i class="fas fa-user-circle fa-3x"></i>
+          </span>
+      </div>
+    </header>
+
+    <section>
+      <div class="a-main a-container">
+        <ul class="a-main__sidepanel">
+          <li class="a-main__sidepanel__sidenav">
+            <a href="app.html">Pulpit<span class="a-arrow">></span></a>
+          </li>
+          <li class="a-main__sidepanel__sidenav">
+            <a href="recipes.html">Przepisy<span class="a-arrow">></span></a>
+          </li>
+          <li class="a-main__sidepanel__sidenav">
+            <a href="schedules.html">Plany<span class="a-arrow">></span></a>
+          </li>
+        </ul>
+        <div class="a-main__mainpanel">
+          <div class="a-main__mainpanel_first-visit">
+            <div class="a-first-visit-container">
+              <h1>Witaj,</h1>
+              <h2>wygląda na to że jesteś tutaj pierwszy raz!</h2>
+              <input type="text" placeholder="tutaj wpisz jak masz na imię"/>
+              <input type="submit" value="Gotowe!"/>
+              <p>Podaj nam swoje imię, a my zorganizujemy dla Ciebie naszą aplikację :)</p>
+            </div>
+          </div>
+          <div class="a-main__mainpanel_next-visit">
+            <div class="a-next-visit-upper">
+              <div class="a-next-visit-upper__widgets">
+                <a class="addRecipe-link" href="addRecipe.html">
+                  <div class="addRecipe-widget">
+                    <i class="far fa-plus-square"></i>
+                    <span>dodaj przepis</span>
+                  </div>
+                </a>
+                <a class="addPlan-link" href="addPlan.html">
+                  <div class="addPlan-widget">
+                    <i class="far fa-plus-square"></i>
+                    <span>dodaj plan</span>
+                  </div>
+                </a>
+              </div>
+              <div class="a-next-visit-upper__messages">
+                <div class="a-next-visit-upper__messages_recipes">
+                  <i class="fas fa-info-circle info"></i>
+                  <i class="fas fa-exclamation-circle warn"></i>
+                  <div><i class="fas fa-window-close"></i></div>
+                </div>
+                <div class="a-next-visit-upper__messages_plans">
+                  <i class="fas fa-info-circle info"></i>
+                  <i class="fas fa-exclamation-circle warn"></i>
+                  <div><i class="fas fa-window-close"></i></div>
+                </div>
+                <div class="a-next-visit-upper__messages_succes succes">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Świetnie że jesteś! Udanego planowania i smacznego! :)</span>
+                  <div><i class="fas fa-window-close"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="a-next-visit-lower">
+              <table class="a-next-visit-lower__table">
+                <caption>Twój plan na <span></span>. tydzień:</caption>
+                <tbody>
+                  <tr>
+                    <th>Poniedziałek</th>
+                    <th>Wtorek</th>
+                    <th>Środa</th>
+                    <th>Czwartek</th>
+                    <th>Piątek</th>
+                    <th>Sobota</th>
+                    <th>Niedziela</th>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="a-next-visit-lower__buttons">
+                <button class="a-next-visit-lower__buttons_prev"> <b>&laquo</b> poprzedni</button>
+                <button class="a-next-visit-lower__buttons_next">następny <b>&raquo</b> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

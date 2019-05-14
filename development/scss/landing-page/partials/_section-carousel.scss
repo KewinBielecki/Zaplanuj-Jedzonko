@@ -1,0 +1,39 @@
+
+.l-carousel {
+  height: 400px;
+  display: flex;
+
+  &__list {
+    height: 100%;
+    flex: 8;
+    list-style-type: none;
+
+    li {
+      height: 100%;
+      font-size: 20px;
+      display: none;
+
+      p {
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px 100px;
+      }
+    }
+  }
+
+  &__buttons {
+    height: 100%;
+    flex: 1;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+}
+
+.l-carousel .l-visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

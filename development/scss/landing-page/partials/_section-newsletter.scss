@@ -1,0 +1,49 @@
+.l-newsletter {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    text-align: left;
+    font-size: 40px;
+    color: white;
+  }
+
+  &__inputs {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &_email {
+      width: 65%;
+      height: 50px;
+      border: none;
+      outline: none;
+      padding: 0 20px;
+      font-size: 20px;
+    }
+    &_submit {
+      width: 35%;
+      height: 50px;
+      border: none;
+      outline: none;
+      font-size: 20px;
+      color: white;
+      background-color: $orange;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: darken($orange, 8%);
+        box-shadow: 2px 2px 3px 3px lighten(black, 10%);
+        cursor: pointer;
+      }
+
+      &:active {
+        transform: translateY(3px) translateX(3px);
+        box-shadow: 0 1px 1px 1px lighten(black, 10%);
+      }
+    }
+  }
+}

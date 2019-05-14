@@ -1,0 +1,52 @@
+.l-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  &__logo {
+    padding-left: 20px;
+    flex: 1.5;
+    font-family: 'Charmonman', cursive;
+    color: $orange;
+    span {
+      color: white;
+    }
+  }
+
+  &__nav {
+    flex: 2;
+  }
+
+  &__nav_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav_element {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+
+    a {
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    &:first-child a {
+      color: $orange;
+    }
+
+    &:hover {
+      background-color: lighten($dark-background, 8%);
+      border-radius: 10px;
+
+    }
+  }
+}

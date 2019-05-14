@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<header class="a-background-grey a-container">
+    <div class="a-header a-container">
+        <h1 class="a-header__logo">
+            <span id="first">Zaplanuj</span>
+            <span id="second">Jedzonko</span>
+        </h1>
+        <h2 class="a-header__user a-container">Imię</h2>
+        <span class="a-orangeUser">
+            <i class="fas fa-user-circle fa-3x"></i>
+          </span>
+    </div>
+</header>
+
+<section>
+    <div class="a-main a-container">
+        <ul class="a-main__sidepanel">
+            <li class="a-main__sidepanel__sidenav">
+                <a href="app.html">Pulpit<span class="a-arrow">></span></a>
+            </li>
+            <li class="a-main__sidepanel__sidenav">
+                <a href="recipes.html">Przepisy<span class="a-arrow">></span></a>
+            </li>
+            <li class="a-main__sidepanel__sidenav">
+                <a href="schedules.html">Plany<span class="a-arrow">></span></a>
+            </li>
+        </ul>
+        <div class="a-main__mainpanel">
+            <div class="a-main__mainpanel_recipes">
+                <div class="recipes-list-header">
+                    <span>LISTA PRZEPISÓW</span>
+                    <a href="addRecipe.html"><i class="fas fa-plus"></i></a>
+                </div>
+                <table class="recipes-list-table">
+                    <tbody>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAZWA</th>
+                        <th>OPIS</th>
+                        <th>AKCJE</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="./js/recipes.js"></script>
+
+</body>
+</html>
